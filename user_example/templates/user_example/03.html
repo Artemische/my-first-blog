@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <title>Удачи</title>
+</head>
+<body>
+    <h1>Спасибо за регистрацию!</h1>
+    {% for inform in informs %}
+    <div>({{inform.group}}) {{inform.first_name}} {{inform.surname}} - {{inform.task}}</div>
+    {% endfor %}
+</body>
+</html>

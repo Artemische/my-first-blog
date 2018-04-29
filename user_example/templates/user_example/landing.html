@@ -1,0 +1,23 @@
+<!DOCTYPE html>{% load static %}
+<html lang="en">
+<head>
+    <title>Регистрация</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <script src="http://megatimer.ru/s/c8ebb6cca0c29f8b80ff56cec1daff92.js"></script>
+</head>
+<body>
+    <h1 class="title">Registration form</h1>
+    <form action="" method="post">{% csrf_token %}
+        {{form.as_p}}
+        <div>
+            <button type="submit" class="btn btn-primary">Registrate</button>
+        </div>
+    </form>
+
+
+</body>
+</html>
